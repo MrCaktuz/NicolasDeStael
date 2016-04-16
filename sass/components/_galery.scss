@@ -1,0 +1,45 @@
+/* The Artist
+*
+* /sass/components/_galery.scss - Esthetic style for galery page
+*
+* coded by Mucht!
+*/
+
+.content{
+    .photos{
+        display: block;
+    	position: relative;
+    	text-align: center;
+        &__photo{
+            position: relative;
+            display: block;
+            float: left;
+        	overflow: hidden;
+        	transition: 0.2s ease-in;
+        	border: 5px solid $blueGrey;
+            box-shadow:  2px 3px 5px -1px $darkGrey;
+            &--img{
+            	border: none;
+            }
+            &--legend{
+            	position: absolute;
+            	bottom: 0;
+            	left: 174px;
+                right: -174px;
+            	font-size: 0.8em;
+            	padding: 10px 5px;
+            	color: $black;
+            	background-color: $blueGreyLegend;
+            	transition: 0.2s ease-in;
+            }
+        }
+        &__photo:hover{
+        	transform: scale(1.1) rotate(1deg);
+            box-shadow:  3px 4px 6px 0px $darkGrey;
+        }
+        &__photo:hover .photos__photo--legend{
+            left: 0;
+            right: 0;
+        }
+    }
+}

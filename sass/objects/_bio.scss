@@ -1,0 +1,25 @@
+/* The Artist
+*
+* /sass/components/_bio.scss - Non Esthetic style for biography page
+*
+* coded by Mucht!
+*/
+
+.content{
+    &__img{
+        &--img{
+
+        }
+        &--legend{
+            width: 300px;
+        }
+    }
+    &__bio{
+        margin-top: 80px;
+    	width: 800px;
+        &--paragraphes{
+            margin-bottom: 1em;
+            width: 30em;
+        }
+    }
+}

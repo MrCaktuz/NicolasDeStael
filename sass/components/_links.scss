@@ -1,0 +1,29 @@
+/* The Artist
+*
+* /sass/components/_links.scss - Esthetic style for links page
+*
+* coded by Mucht!
+*/
+
+.content{
+    .links{
+        &__link{
+            text-align: center;
+        	overflow: hidden;
+        }
+        &__link a{
+            display: block;
+        	font-size: 1.5em;
+        	padding: 20px 0;
+        	transition: 0.2s ease-in;
+            color: $orange;
+            &:hover{
+                color: $black;
+            	transform: scale(1.1);
+            }
+        }
+        &__link:nth-child(2n){
+        	background-color: $blueGrey;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="description">
+	<meta author="Claessens_Mathieu">
+	<link rel="stylesheet" href="../css/styles.css" type="text/css">
+	<title>Pratique - Nicolas de Sta&euml;l</title>
+</head>
+<body>
+	<div class="wrap">
+		<h1>Exposition et tickets</h1>
+        <div class="nav">
+			<nav class="mainNav">
+				<h2 class="hidden">Navigation principale</h2>
+				<a class="mainNav__buttons" href="../index.html">Accueil</a>
+				<a class="mainNav__buttons" href="./bibliographie.html">Bibliographie</a>
+				<a class="mainNav__buttons" href="./biographie.html">Biographie</a>
+				<a class="mainNav__buttons" href="#">Galerie</a>
+				<a class="mainNav__buttons" href="./liens.html">Liens</a>
+				<a class="mainNav__buttons mainNav__buttons--active" href="./pratique.html">Pratique</a>
+			</nav>
+		</div><!-- navigation -->
+		<div class="content">
+            <div class="info">
+				<p class="info__paragraphe info__paragraphe--date">Du 20 novembre 2015 au 18 mars 2016</p>
+				<p class="info__paragraphe info__paragraphe--location">Palais des Beaux-Arts de Houtesiplou</p>
+				<p class="info__paragraphe info__paragraphe--timetable">Ouvert tous les jours de 10h &agrave; 18h sauf le lundi</p>
+				<p class="info__paragraphe info__paragraphe--price">Entrée&nbsp;: adultes 4&euro; - enfants 2&euro;</p>
+				<p class="info__paragraphe info__paragraphe--phone">Téléphone&nbsp;: <span>+32 476 75 74 73</span></p>
+			</div> <!-- info -->
+			<div class="form">
+				<form method="post" enctype="multipart/form-data" action="http://10.59.26.130/~user22/form/form.php">
+					<fieldset>
+					<h2 class="form__title">Demande de catalogue</h2>
+					<div class="form__row">
+						<label class="form__row--label" for="nom">Nom</label>
+						<input class="form__row--input" type="texte" id="nom" name="nom de famille" placeholder="Joséphine" maxlength="50" size="30">
+					</div>
+					<div class="form__row">
+						<label class="form__row--label" for="prenom">Prénom</label>
+						<input class="form__row--input" type="texte" id="prenom" name="prénom de la personne" placeholder="Ange Gardienne" maxlength="50" size="30">
+					</div>
+					<div class="form__row">
+						<label class="form__row--label" for="address1">Adresse</label>
+						<input class="form__row--input" type="texte" id="address1" name="adresse ligne 1" placeholder="Rue Peetermans 80" maxlength="100" size="30">
+					</div>
+					<div class="form__row">
+						<label class="form__row--label" for="postal">Code postal</label>
+						<input class="form__row--input" type="texte" id="postal" name="code postal" placeholder="4100" maxlength="10" size="30">
+					</div>
+					<div class="form__row">
+						<label class="form__row--label" for="ville">Ville</label>
+						<input class="form__row--input" type="texte" id="ville" name="ville ou village" placeholder="Seraing" maxlength="50" size="30">
+					</div>
+					<div class="form__row">
+						<label class="form__row--label" for="pays">Pays</label>
+						<input class="form__row--input" type="texte" id="pays" name="pays" placeholder="Belgique" maxlength="50" size="30">
+					</div>
+					<div>
+						<button class="form__submit" type="submit">Commander</button>
+					</div>
+				</fieldset>
+			</div> <!-- form -->
+		</div><!-- content -->
+		<footer>
+			<p>&copy; Mathieu Claessens 2285</p>
+		</footer>
+	</div><!-- wrap -->
+</body>
+</html>

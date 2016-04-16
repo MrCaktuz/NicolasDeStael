@@ -1,0 +1,758 @@
+@charset "UTF-8";
+/* The Artist
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Mucht!
+ * started at 24/02/2016
+ */
+/* Modus Versus Slicing
+ *
+ * /sass/settings/_paths.scss - Global paths variables
+ *
+ * coded by Mucht
+ */
+/* The Artist
+ *
+ * /sass/settings/_colors.scss - Global colors variables
+ *
+ * coded by Mucht!
+ * started at 24/02/2016
+ */
+/* The Artist
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by Mucht
+ */
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-regular-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-regular-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-regular-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-italic-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-italic-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-italic-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-italic-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-semibold-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-semibold-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-semibold-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-semibold-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-bold-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-bold-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-bold-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-bolditalic-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Glyphs';
+  src: url("../assets/fonts/fontawesome/fontawesome-webfont.eot");
+  src: url("../assets/fonts/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../assets/fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../assets/fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../assets/fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* The Artist
+ *
+ * /sass/settings/_sizes.scss - Global sizes variables
+ *
+ * coded by Mucht
+ */
+/* The Artist
+ *
+ * /sass/generic/_meyer-reset.scss - reset
+ *
+ * coded by Mucht!
+ * started at 24/02/2016
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* The Artist
+ *
+ * /sass/generic/_box-sizing.scss - box-sizing reset
+ *
+ * coded by Mucht!
+ * started at 24/02/2016
+ */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* The Artist
+*
+* /sass/objects/_global.scss - Non Esthetic style for global
+*
+* coded by Mucht!
+* started at 18/03/2016
+*/
+body {
+  margin-top: 46px;
+}
+
+.wrap, .content {
+  width: 100%;
+}
+
+.section__title {
+  margin-bottom: 0.3em;
+}
+
+/* The Artist
+ *
+ * /sass/components/_mainNav.scss - Non Esthetic style for mainNav
+ *
+ * coded by Mucht!
+ * started at 24/02/2016
+ */
+.nav {
+  width: 100%;
+}
+
+.nav .mainNav {
+  width: 100%;
+}
+
+/* The Artist
+ *
+ * /sass/objects/_header.scss - Esthetic style for header
+ *
+ * coded by Mucht!
+ * started at 19/03/2016
+ */
+/* The Artist
+*
+* /sass/components/_footer.scss - Non Esthetic style for footer
+*
+* coded by Mucht!
+*/
+footer {
+  width: 100%;
+  margin: 25px 0 5px;
+}
+
+/* The Artist
+*
+* /sass/components/_sections.scss - Non Esthetic style for sections
+*
+* coded by Mucht!
+*/
+.section {
+  width: 50%;
+}
+
+.section--biographie {
+  width: 100%;
+}
+
+/* The Artist
+*
+* /sass/components/_biblio.scss - Non Esthetic style for biblio page
+*
+* coded by Mucht!
+*/
+.content .row__book--cover {
+  margin: 20px;
+}
+
+.content .row__book--text {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.content .row__book--text .paragraphes {
+  margin-bottom: 1em;
+}
+
+/* The Artist
+*
+* /sass/components/_bio.scss - Non Esthetic style for biography page
+*
+* coded by Mucht!
+*/
+.content__img--legend {
+  width: 300px;
+}
+
+.content__bio {
+  margin-top: 80px;
+  width: 800px;
+}
+
+.content__bio--paragraphes {
+  margin-bottom: 1em;
+  width: 30em;
+}
+
+/* The Artist
+*
+* /sass/components/_galery.scss - Non Esthetic style for galery page
+*
+* coded by Mucht!
+*/
+.content .photos {
+  margin: 20px auto 0 auto;
+}
+
+.content .photos__photo {
+  width: 174px;
+  height: 174px;
+  margin: 25px;
+}
+
+.content .photos__photo--img {
+  margin: 0;
+}
+
+/* The Artist
+*
+* /sass/components/_links.scss - Non Esthetic style for links page
+*
+* coded by Mucht!
+*/
+/* The Artist
+*
+* /sass/components/_pratique.scss - Non Esthetic style for pratique page
+*
+* coded by Mucht!
+*/
+.content .info {
+  margin: 2em;
+}
+
+.content .info__paragraphe {
+  margin-top: 1em;
+}
+
+.content .info__paragraphe--date::before {
+  margin-right: 0.6em;
+}
+
+.content .info__paragraphe--location::before {
+  margin-right: 1em;
+}
+
+.content .info__paragraphe--timetable::before {
+  margin-right: 0.75em;
+}
+
+.content .info__paragraphe--price::before {
+  margin-right: 1em;
+}
+
+.content .info__paragraphe--phone::before {
+  margin-right: 0.75em;
+}
+
+.content .form {
+  margin: 2em;
+}
+
+.content .form__title {
+  margin-bottom: 25px;
+}
+
+.content .form__row {
+  width: 410px;
+  margin: 10px;
+  height: 46px;
+}
+
+.content .form__row--label {
+  width: 125px;
+}
+
+.content .form__row--input {
+  height: 40px;
+}
+
+.content .form__submit {
+  width: 410px;
+  margin: 10px;
+  height: 46px;
+}
+
+/* The Artist
+*
+* /sass/components/_global.scss - Esthetic style for global
+*
+* coded by Mucht!
+* started at 18/03/2016
+*/
+html {
+  font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+  font-size: 18px;
+}
+
+body {
+  background-image: url(../assets/img/background.png);
+}
+
+.hidden {
+  display: none;
+}
+
+.clear {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrap, .content {
+  position: relative;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+.section__title {
+  transition: 0.2s ease-in;
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  color: #F89941;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* The Artist
+ *
+ * /sass/components/_mainNav.scss - Esthetic style for mainNav
+ *
+ * coded by Mucht!
+ * started at 24/02/2016
+ */
+.nav {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 8px solid #E4552D;
+}
+
+.nav .mainNav {
+  background-color: #000;
+  text-align: center;
+}
+
+.nav .mainNav__buttons:hover {
+  color: #F89941;
+}
+
+.nav .mainNav__buttons {
+  display: inline-block;
+  padding: 15px 20px;
+  color: #FFF;
+  transition: 0.1s ease-in;
+}
+
+.nav .mainNav__buttons--active {
+  background-color: #E4552D;
+}
+
+.nav .mainNav__buttons--active:hover {
+  color: #000;
+}
+
+/* The Artist
+ *
+ * /sass/components/_header.scss - Esthetic style for header
+ *
+ * coded by Mucht!
+ * started at 19/03/2016
+ */
+h1 {
+  font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+  color: #000;
+  text-align: center;
+  font-size: 5em;
+  padding: 60px 50px 40px 50px;
+  background-image: url(../assets/img/Cover.jpg);
+  background-size: cover;
+}
+
+/* The Artist
+*
+* /sass/components/_footer.scss - Esthetic style for footer
+*
+* coded by Mucht!
+*/
+footer {
+  text-align: center;
+  padding: 5px 10px;
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  color: #ccc;
+}
+
+/* The Artist
+*
+* /sass/components/_sections.scss - Esthetic style for sections
+*
+* coded by Mucht!
+*/
+.section {
+  text-align: center;
+}
+
+.section__link {
+  display: block;
+  padding: 50px;
+  transition: 0.2s ease-in;
+}
+
+.section__link--text {
+  color: #686868;
+  transition: 0.2s ease-in;
+}
+
+.section__link:hover .section__link--text {
+  color: #F89941;
+}
+
+.section__link:hover .section__title {
+  color: #000;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.section--pratique {
+  position: relative;
+  display: inline-block;
+}
+
+.section--bibliographie {
+  float: right;
+}
+
+.section--biographie {
+  background-color: rgba(179, 199, 230, 0.5);
+}
+
+.section--galerie {
+  display: inline-block;
+}
+
+.section--lien {
+  float: right;
+}
+
+/* The Artist
+*
+* /sass/components/_biblio.scss - Esthetic style for biblio page
+*
+* coded by Mucht!
+*/
+.content {
+  display: table;
+  table-layout: fixed;
+}
+
+.content .row {
+  display: table-row;
+}
+
+.content .row__book {
+  display: table-cell;
+  padding: 20px;
+}
+
+.content .row__book--cover {
+  float: left;
+  box-shadow: 2px 3px 5px -1px #686868;
+}
+
+.content .row__book--text {
+  float: left;
+  color: #000;
+}
+
+.content .row:first-child .row__book:first-child, .content .row:nth-child(2) .row__book:last-child, .content .row:last-child .row__book:first-child {
+  background-color: rgba(179, 199, 230, 0.5);
+}
+
+/* The Artist
+*
+* /sass/components/_bio.scss - Esthetic style for biography page
+*
+* coded by Mucht!
+*/
+.content__img {
+  float: left;
+  margin: 80px 40px 40px 40px;
+  box-shadow: 2px 3px 5px -1px #686868;
+  border: 5px solid rgba(179, 199, 230, 0.5);
+  background-color: rgba(179, 199, 230, 0.5);
+}
+
+.content__img--img {
+  margin: 0;
+}
+
+.content__img--legend {
+  font-size: 0.7em;
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.content__bio {
+  float: left;
+  color: #686868;
+}
+
+/* The Artist
+*
+* /sass/components/_galery.scss - Esthetic style for galery page
+*
+* coded by Mucht!
+*/
+.content .photos {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.content .photos__photo {
+  position: relative;
+  display: block;
+  float: left;
+  overflow: hidden;
+  transition: 0.2s ease-in;
+  border: 5px solid rgba(179, 199, 230, 0.5);
+  box-shadow: 2px 3px 5px -1px #686868;
+}
+
+.content .photos__photo--img {
+  border: none;
+}
+
+.content .photos__photo--legend {
+  position: absolute;
+  bottom: 0;
+  left: 174px;
+  right: -174px;
+  font-size: 0.8em;
+  padding: 10px 5px;
+  color: #000;
+  background-color: rgba(179, 199, 230, 0.8);
+  transition: 0.2s ease-in;
+}
+
+.content .photos__photo:hover {
+  -webkit-transform: scale(1.1) rotate(1deg);
+      -ms-transform: scale(1.1) rotate(1deg);
+          transform: scale(1.1) rotate(1deg);
+  box-shadow: 3px 4px 6px 0px #686868;
+}
+
+.content .photos__photo:hover .photos__photo--legend {
+  left: 0;
+  right: 0;
+}
+
+/* The Artist
+*
+* /sass/components/_links.scss - Esthetic style for links page
+*
+* coded by Mucht!
+*/
+.content .links__link {
+  text-align: center;
+  overflow: hidden;
+}
+
+.content .links__link a {
+  display: block;
+  font-size: 1.5em;
+  padding: 20px 0;
+  transition: 0.2s ease-in;
+  color: #F89941;
+}
+
+.content .links__link a:hover {
+  color: #000;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.content .links__link:nth-child(2n) {
+  background-color: rgba(179, 199, 230, 0.5);
+}
+
+/* The Artist
+*
+* /sass/components/_pratique.scss - Esthetic style for pratique page
+*
+* coded by Mucht!
+*/
+.content .info {
+  float: right;
+  display: inline-block;
+  background-color: rgba(179, 199, 230, 0.5);
+  padding: 1em 2em 2em 2em;
+}
+
+.content .info__paragraphe--date::before {
+  content: "";
+  font: 2em "Glyphs";
+}
+
+.content .info__paragraphe--location::before {
+  content: "";
+  font: 2em "Glyphs";
+}
+
+.content .info__paragraphe--timetable::before {
+  content: "";
+  font: 2em "Glyphs";
+}
+
+.content .info__paragraphe--price::before {
+  content: "";
+  font: 2em "Glyphs";
+}
+
+.content .info__paragraphe--phone::before {
+  content: "";
+  font: 2em "Glyphs";
+}
+
+.content .form {
+  background-color: rgba(179, 199, 230, 0.5);
+  float: left;
+  padding: 1em 2em 2em 2em;
+}
+
+.content .form__title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.content .form__row {
+  position: relative;
+  background-color: #FFF;
+  border: 1px solid rgba(179, 199, 230, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 1px 1px #ccc inset;
+  color: #3e3f3a;
+  display: block;
+  font-size: 14px;
+  line-height: 1.42857;
+  padding: 12px 16px;
+}
+
+.content .form__row--label {
+  display: block;
+  font: 1em "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: right;
+  background-color: #E4552D;
+  border-radius: 4px 0 0 4px;
+  color: #FFF;
+  display: block;
+  font-size: 14px;
+  line-height: 1.42857;
+  padding: 12px 16px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.content .form__row--input {
+  background-color: none;
+  border: none;
+  color: #686868;
+  float: right;
+  position: absolute;
+  top: 2px;
+  right: 17px;
+  font-size: 1em;
+}
+
+.content .form__submit {
+  border: none;
+  background-color: #E4552D;
+  border-radius: 4px;
+  color: #FFF;
+  display: block;
+  font-size: 14px;
+  line-height: 1.42857;
+  padding: 12px 16px;
+}

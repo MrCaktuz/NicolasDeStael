@@ -1,0 +1,29 @@
+/* The Artist
+*
+* /sass/components/_biblio.scss - Esthetic style for biblio page
+*
+* coded by Mucht!
+*/
+
+.content{
+    display: table;
+    table-layout: fixed;
+    .row{
+        display: table-row;
+        &__book{
+            display: table-cell;
+            padding: 20px;
+            &--cover{
+                float: left;
+                box-shadow: 2px 3px 5px -1px $darkGrey;
+            }
+            &--text{
+                float: left;
+                color: $black;
+            }
+        }
+    }
+    .row:first-child .row__book:first-child, .row:nth-child(2) .row__book:last-child, .row:last-child .row__book:first-child{
+    	background-color: $blueGrey;
+    }
+}

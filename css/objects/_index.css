@@ -1,0 +1,17 @@
+/* The Artist
+*
+* /sass/components/_sections.scss - Non Esthetic style for sections
+*
+* coded by Mucht!
+*/
+.section {
+  width: 50%;
+}
+
+.section__link--date {
+  width: 120px;
+}
+
+.section--biographie {
+  width: 100%;
+}

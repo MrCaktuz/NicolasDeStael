@@ -1,0 +1,52 @@
+/* The Artist
+*
+* /sass/components/_pratique.scss - Non Esthetic style for pratique page
+*
+* coded by Mucht!
+*/
+
+.content{
+    .info{
+        margin: 2em;
+        &__paragraphe{
+            margin-top: 1em;
+            &--date::before{
+                margin-right: 0.6em;
+            }
+            &--location::before{
+                margin-right: 1em;
+            }
+            &--timetable::before{
+                margin-right: 0.75em;
+            }
+            &--price::before{
+                margin-right: 1em;
+            }
+            &--phone::before{
+                margin-right: 0.75em;
+            }
+        }
+    }
+    .form{
+        margin: 2em;
+        &__title{
+            margin-bottom: 25px;
+        }
+        &__row{
+            width: 410px;
+            margin: 10px;
+            height: 46px;
+            &--label{
+                width: 125px;
+            }
+            &--input{
+                height: 40px;
+            }
+        }
+        &__submit{
+            width: 410px;
+            margin: 10px;
+            height: 46px;
+        }
+    }
+}

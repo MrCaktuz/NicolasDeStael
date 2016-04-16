@@ -1,0 +1,49 @@
+/* The Artist
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Mucht!
+ * started at 24/02/2016
+ */
+
+// 1. Settings - Variables globales
+@import "settings/paths";
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/sizes";
+
+// 2. Tools - Mixins globaux, functions & outils
+
+
+// 3. Generic - Style de remise à zéro (reset, normalize…)
+@import "generic/meyer-reset";
+@import "generic/box-sizing";
+
+// 4. Base - Éléments bruts
+
+
+// 5. Objects - Éléments de mise en forme non-cosmétique
+@import "objects/global";
+@import "objects/mainNav";
+@import "objects/header";
+@import "objects/footer";
+@import "objects/index";
+@import "objects/biblio";
+@import "objects/bio";
+@import "objects/galery";
+@import "objects/links";
+@import "objects/pratique";
+
+// 6. Components - Design des composants, morceaux d'UI
+@import "components/global";
+@import "components/mainNav";
+@import "components/header";
+@import "components/footer";
+@import "components/index";
+@import "components/biblio";
+@import "components/bio";
+@import "components/galery";
+@import "components/links";
+@import "components/pratique";
+
+// 7. Trumps - Styles spécifiques à un élément

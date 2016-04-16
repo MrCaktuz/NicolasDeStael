@@ -1,0 +1,17 @@
+/* The Artist
+*
+* /sass/components/_biblio.scss - Non Esthetic style for biblio page
+*
+* coded by Mucht!
+*/
+.content .row__book--cover {
+  margin: 20px;
+}
+
+.content .row__book--text {
+  width: 50%;
+}
+
+.content .row__book--text .paragraphes {
+  margin-bottom: 1em;
+}

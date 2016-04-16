@@ -1,0 +1,14 @@
+/* The Artist
+*
+* /sass/components/_pratique.scss - Non Esthetic style for pratique page
+*
+* coded by Mucht!
+*/
+.content .info {
+  width: 50%;
+  padding: 1em 2em 2em 2em;
+}
+
+.content .info__paragraphe {
+  margin-top: 1em;
+}

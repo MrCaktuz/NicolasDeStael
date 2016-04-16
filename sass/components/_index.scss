@@ -1,0 +1,43 @@
+/* The Artist
+*
+* /sass/components/_sections.scss - Esthetic style for sections
+*
+* coded by Mucht!
+*/
+
+.section{
+    text-align: center;
+    &__link{
+        display: block;
+    	padding: 50px;
+    	transition: 0.2s ease-in;
+        &--text{
+            color: $darkGrey;
+        	transition: 0.2s ease-in;
+        }
+    }
+
+    &__link:hover .section__link--text{
+    	color: $orange;
+    }
+    &__link:hover .section__title{
+    	color: $black;
+        transform: scale(1.1);
+    }
+    &--pratique{
+    	position: relative;
+    	display: inline-block;
+    }
+    &--bibliographie{
+    	float: right;
+    }
+    &--biographie{
+    	background-color: $blueGrey;
+    }
+    &--galerie{
+    	display: inline-block;
+    }
+    &--lien{
+    	float: right;
+    }
+}

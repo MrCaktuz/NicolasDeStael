@@ -1,0 +1,47 @@
+/* The Artist
+*
+* /sass/components/_global.scss - Esthetic style for global
+*
+* coded by Mucht!
+* started at 18/03/2016
+*/
+
+html{
+    font-family: $GaramondStack;
+	font-size: 18px;
+}
+
+body{
+    background-image: url(#{$imgPath}background.png);
+}
+
+.hidden{
+    display: none;
+}
+
+.clear{
+    content: "";
+	display: block;
+	clear: both;
+}
+
+.wrap, .content{
+	position: relative;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: $black;
+}
+
+.section__title{
+    transition: 0.2s ease-in;
+    font-family: $openSansStack;
+	font-size: 2em;
+	color: #F89941;
+}
+
+strong{
+    font-weight: bold;
+}

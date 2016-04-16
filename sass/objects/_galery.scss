@@ -1,0 +1,22 @@
+/* The Artist
+*
+* /sass/components/_galery.scss - Non Esthetic style for galery page
+*
+* coded by Mucht!
+*/
+
+.content{
+    .photos{
+    	margin: 20px auto 0 auto;
+        &__photo{
+        	width: 174px;
+        	height: 174px;
+            margin: 25px;
+            &--img{
+                margin: 0;
+            }
+            &--legend{
+            }
+        }
+    }
+}

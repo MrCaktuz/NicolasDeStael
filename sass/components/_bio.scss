@@ -1,0 +1,31 @@
+/* The Artist
+*
+* /sass/components/_bio.scss - Esthetic style for biography page
+*
+* coded by Mucht!
+*/
+
+.content{
+    &__img{
+        float: left;
+    	margin: 80px 40px 40px 40px;
+        box-shadow:  2px 3px 5px -1px $darkGrey;
+        border: 5px solid $blueGrey;
+        background-color: $blueGrey;
+        &--img{
+            margin: 0;
+        }
+        &--legend{
+            font-size: 0.7em;
+            text-align: center;
+            padding: 10px 5px;
+        }
+    }
+    &__bio{
+        float: left;
+    	color: $darkGrey;
+        &--paragraphes:nth-child(2n){
+
+        }
+    }
+}

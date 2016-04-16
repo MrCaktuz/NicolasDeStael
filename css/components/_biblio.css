@@ -1,0 +1,22 @@
+/* The Artist
+*
+* /sass/components/_biblio.scss - Esthetic style for biblio page
+*
+* coded by Mucht!
+*/
+.content {
+  display: table;
+}
+
+.content .row {
+  display: table-row;
+}
+
+.content .row__book {
+  display: table-cell;
+  padding: 20px;
+}
+
+.content .row__book--cover {
+  float: left;
+}
